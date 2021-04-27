@@ -35,14 +35,14 @@ https://github.com/kkml4220/template_tex
 
 ![githubからダウンロード](./images/github.png)
 
-zip形式でタンロードしたものを先ほど作った`usr`フォルダに解凍して配置してください.
+zip形式でタンロードしたものを先ほど作った`usr`フォルダにzipファイルを解凍したものを配置してください.
 
 ```bash
 cd 
 ls usr/
 ```
 
-として,`template_tex`と表示されれば成功です.
+として,`template_tex-master`と表示されれば成功です.
 
 ### usr フォルダへのリンクを作成
 
