@@ -20,14 +20,14 @@
 1. WSL の有効化
 1. texlive のインストール
 
-### usr フォルダの作成
+### 1.usr フォルダの作成
 
 Windows の`C:`ドライブの直下に`usr`フォルダを作成します.
 
 ![usrフォルダの作成](./images/usr.png)
 
 
-### テンプレートのダウンロード
+### 2.テンプレートのダウンロード
 
 [GitHub](https://github.com/kkml4220/template_tex)からzip形式でダウンロード.
 
@@ -44,7 +44,7 @@ ls usr/
 
 として,`template_tex-master`と表示されれば成功です.
 
-### usr フォルダへのリンクを作成
+### 3.usr フォルダへのリンクを作成
 
 Windows のフォルダと Ubuntu のフォルダを紐付けます.
 次のコマンドを順番に実行してください.
@@ -56,13 +56,13 @@ ln -s /mnt/c/usr .
 
 `ls`コマンドを実行して`usr`と表示されれば成功です.
 
-### WSL の有効化
+### 4.WSL の有効化
 
 こちらの[記事](https://qiita.com/kkml_4220/items/f4fe903b36df8e4f7e24)を参考に WSL を有効化して Ubuntu をインストールしてください.
 
 https://qiita.com/kkml_4220/items/f4fe903b36df8e4f7e24
 
-### texlive のインストール
+### 5.texlive のインストール
 
 `Ubuntu`で次のコマンドを実行してください.
 結構時間がかかりますが気長に待ちましょう.
