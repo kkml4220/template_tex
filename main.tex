@@ -1,0 +1,86 @@
+\documentclass{jsarticle}
+
+%%
+%% パッケージを追加する際はここに記述
+%%
+\usepackage{latexsym}
+\usepackage{mathrsfs}
+\usepackage{mathtools}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%% ここから 触らない
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\makeatletter
+% 文章の種類を記述 
+\def\@thesis{レポート課題}
+\def\id#1{\def\@id{#1}}
+\def\mail#1{\def\@mail{#1}}
+\def\department#1{\def\@department{#1}}
+
+\def\@maketitle{
+\begin{center}
+{\huge \@thesis \par}
+\vspace{40mm}
+{\LARGE\bf \@title \par}
+\vspace{10mm}
+{\Large \@date\par}
+\vspace{20mm}
+{\Large \@department \par}
+{\Large 学籍番号　\@id \par}
+{\Large \@mail \par}
+\vspace{10mm}
+{\large \@author}
+\end{center}
+\par\vskip 1.5em
+}
+
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%% ここまで触らない
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+% ここにレポートタイトルを記述
+\title{○○○○○○○ 第○回講義課題} 
+% 提出日を記述
+\date{提出日　2021年4月28日} 
+\department{○○大学○○学部　○○科　○年}
+% 学籍番号を記述
+\id{○○○○} 
+% メールアドレスを記述
+\mail{********@gmail.comとか} 
+% 名前を記述
+\author{Takahashi Katsuyuki}
+
+\begin{document}
+\maketitle
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 以下 自由に改変
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{はじめに}
+はじめてのコンパイル.
+
+
+箇条書きはこんな感じ.
+
+\begin{enumerate}
+  \item 数学
+  \item 物理
+  \item 化学
+\end{enumerate}
+
+\section{数式}
+
+\begin{align}
+    \int^b_a f(x) dx = \left[F(x)\right]^b_a = F(b) - F(a)
+\end{align}
+
+
+\end{document}
