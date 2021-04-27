@@ -1,5 +1,7 @@
 # [Windows] 最低限のTeX環境構築
 
+[Qiitaの記事](https://qiita.com/kkml_4220/items/2bac5b83395d75619a0f)に紐づけられたリポジトリです.
+
 ## 目標
 
 - TeX で最低限レポートが書ける程度に環境構築.
@@ -14,20 +16,26 @@
 次のような手順で説明します.
 すでに完了している事項は適宜スキップしてください.
 
+1. WSL の有効化
 1. `usr`フォルダの作成
 1. テンプレートのダウンロード
 1. usr フォルダへのリンクを作成
-1. WSL の有効化
 1. texlive のインストール
 
-### 1.usr フォルダの作成
+### 1.WSL の有効化
+
+こちらの[記事](https://qiita.com/kkml_4220/items/f4fe903b36df8e4f7e24)を参考に WSL を有効化して Ubuntu をインストールしてください.
+
+https://qiita.com/kkml_4220/items/f4fe903b36df8e4f7e24
+
+### 2.usr フォルダの作成
 
 Windows の`C:`ドライブの直下に`usr`フォルダを作成します.
 
 ![usrフォルダの作成](./images/usr.png)
 
 
-### 2.テンプレートのダウンロード
+### 3.テンプレートのダウンロード
 
 [GitHub](https://github.com/kkml4220/template_tex)からzip形式でダウンロード.
 
@@ -44,7 +52,7 @@ ls usr/
 
 として,`template_tex-master`と表示されれば成功です.
 
-### 3.usr フォルダへのリンクを作成
+### 4.usr フォルダへのリンクを作成
 
 Windows のフォルダと Ubuntu のフォルダを紐付けます.
 次のコマンドを順番に実行してください.
@@ -56,13 +64,11 @@ ln -s /mnt/c/usr .
 
 `ls`コマンドを実行して`usr`と表示されれば成功です.
 
-### 4.WSL の有効化
 
-こちらの[記事](https://qiita.com/kkml_4220/items/f4fe903b36df8e4f7e24)を参考に WSL を有効化して Ubuntu をインストールしてください.
-
-https://qiita.com/kkml_4220/items/f4fe903b36df8e4f7e24
 
 ### 5.texlive のインストール
+
+はじめに`cd`コマンドで`Makefile`のあるディレクトリまで移動
 
 `Ubuntu`で次のコマンドを実行してください.
 結構時間がかかりますが気長に待ちましょう.
